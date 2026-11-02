@@ -1,0 +1,21 @@
+:root{--bg:#E6E7E8;--card:#F4F4F5;--ink:#1C1D1F;--dim:#6B6D70;--line:#D3D4D6;--accent:#FF5A1F}
+@media (prefers-color-scheme:dark){:root{--bg:#141516;--card:#1E1F21;--ink:#ECEDED;--dim:#8A8C8F;--line:#2E3033}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif}
+main{max-width:680px;margin:0 auto;padding:56px 16px 80px}
+.brand{font:600 13px ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:4px;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand i{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-1px;margin:40px 0 8px}
+h1 em{font-style:normal;color:var(--accent)}
+h2{font:600 12px ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin:40px 0 8px}
+p,li{color:var(--ink)}
+.lede{font-size:19px;color:var(--dim);margin-top:0}
+.card{background:var(--card);border-radius:18px;padding:4px 22px;margin-top:24px}
+.card>div{padding:16px 0;border-top:1px solid var(--line)}
+.card>div:first-child{border-top:0}
+.card b{display:block}
+a{color:var(--accent)}
+.meta,footer{font:12px ui-monospace,"SF Mono",Menlo,monospace;color:var(--dim);letter-spacing:1px}
+footer{margin-top:56px;display:flex;gap:18px;flex-wrap:wrap}
+footer a{color:var(--dim)}
+.btn{display:inline-block;margin-top:20px;background:var(--accent);color:#fff;text-decoration:none;font:600 13px ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:1.5px;padding:14px 20px;border-radius:12px}
