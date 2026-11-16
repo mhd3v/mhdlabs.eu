@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ritlum</title>
+<meta name="description" content="Ritlum is a habit tracker for iPhone with NFC check-ins and Ritlum mini, a light grid for your desk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap">
+<link rel="stylesheet" href="/style.css">
+<script src="/site.js" defer></script>
+</head>
+<body>
+
+<header class="wrap top">
+  <div class="crumbs"><a class="up" href="/">MHD Labs</a><span class="sep">/</span><a href="/ritlum/">Ritlum</a></div>
+  <nav class="nav">
+    <a href="#how">How it works</a>
+    <a href="https://ritlum.com">ritlum.com ↗</a>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <p class="label fade">Habit tracker · iPhone and desk</p>
+    <h1 class="display">
+      <span class="line"><span>Habits that live</span></span>
+      <span class="line"><span>beyond the screen.</span></span>
+    </h1>
+    <p class="lede fade">Check off, count or time anything. Tap an NFC tag to log it, and watch the week fill in on your desk.</p>
+  </section>
+
+  <section class="wrap instrument fade">
+    <div class="frame"><canvas class="habits" data-draw="habits" role="img" aria-label="Interactive habit grid. Rows are habits, columns are days. Tap a day to check it in."></canvas></div>
+    <p class="hint mono"><span>Rows are habits. Columns are days. Today is on the right.</span><span>Tap a day to check it in.</span></p>
+  </section>
+
+  <section class="section">
+    <div class="wrap label label-row" style="margin-bottom: 36px"><span>Inside the app</span><span>(06)</span></div>
+    <div class="reel">
+      <ul class="strip">
+        <li><figure class="shot"><img src="/ritlum/screens/today-light.jpg" alt="Today screen with a week of habits as a dot grid and today's check-ins" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>01</span><span>Today</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/ritlum/screens/meditate-nfc-logged.jpg" alt="Meditate habit logged by tapping an NFC tag, with a 15 day streak" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>02</span><span>Logged by NFC tag</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/ritlum/screens/read-timer.jpg" alt="A running 20 minute reading timer" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>03</span><span>Timer habits</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/ritlum/screens/stats-trends.jpg" alt="Trends showing completion rising to 80 percent over eight weeks" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>04</span><span>Trends</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/ritlum/screens/tracker-display.jpg" alt="Tracker Display settings with a live preview of Ritlum mini" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>05</span><span>Ritlum mini setup</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/ritlum/screens/today-dark.jpg" alt="Today screen in dark mode" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>06</span><span>Today, after dark</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/ritlum/screens/today-light.jpg" alt="" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>01</span><span>Today</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/ritlum/screens/meditate-nfc-logged.jpg" alt="" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>02</span><span>Logged by NFC tag</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/ritlum/screens/read-timer.jpg" alt="" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>03</span><span>Timer habits</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/ritlum/screens/stats-trends.jpg" alt="" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>04</span><span>Trends</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/ritlum/screens/tracker-display.jpg" alt="" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>05</span><span>Ritlum mini setup</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/ritlum/screens/today-dark.jpg" alt="" width="660" height="1435" loading="lazy"><figcaption class="mono"><span>06</span><span>Today, after dark</span></figcaption></figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how" class="wrap" style="padding-top: 100px">
+    <div class="label label-row"><span>How it works</span><span>(04)</span></div>
+    <div>
+      <div class="feat">
+        <span class="num mono">01</span>
+        <h3>Every goal, your way</h3>
+        <p>Check it off, count it up or run a timer. Daily, weekly or any rhythm you like, with reminders tied to each habit.</p>
+      </div>
+      <div class="feat">
+        <span class="num mono">02</span>
+        <h3>Tap a tag. It's logged.</h3>
+        <p>Stick an NFC tag on something you already touch, like a kettle, a book or a yoga mat, and tap it with your iPhone.</p>
+      </div>
+      <div class="feat">
+        <span class="num mono">03</span>
+        <h3>Ritlum mini</h3>
+        <p>An 8 × 8 light grid for your desk showing your last eight days, synced over Bluetooth. No Wi-Fi and no account of its own.</p>
+      </div>
+      <div class="feat">
+        <span class="num mono">04</span>
+        <h3>See what's working</h3>
+        <p>Charts and three-month trends for every habit, so you can tell which ones are sticking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap statement">
+    <span class="label">More</span>
+    <div class="body">
+      <p class="big">Ritlum has its own home. <span class="soft">The full story, mini's specs and support all live on ritlum.com.</span></p>
+      <div class="go-list">
+        <a class="go" href="https://ritlum.com"><span>ritlum.com</span><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="go" href="https://apps.apple.com/us/app/ritlum-habit-tracker/id6788856420"><span>App Store</span><span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <div class="foot-bar mono">
+    <span>Made by <a href="/" style="color: var(--ink)">MHD Labs</a></span>
+    <div class="links">
+      <a href="https://ritlum.com/privacy/">Privacy</a>
+      <a href="https://ritlum.com/contact/">Support</a>
+      <a href="/reverie/">Reverie →</a>
+    </div>
+  </div>
+  <div class="wordmark app" aria-hidden="true">Ritlum</div>
+</footer>
+
+</body>
+</html>

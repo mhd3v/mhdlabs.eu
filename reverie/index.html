@@ -1,14 +1,134 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/style.css"><title>Reverie</title><meta name="description" content="Reverie, music you can feel. A tactile music player for iPhone and Android."></head><body><main>
-<a class="brand" href="/"><i></i>Reverie</a>
-<h1>music you<br>can <em>feel.</em></h1>
-<p class="lede">A tactile music player for iPhone and Android. Spin a brushed-metal wheel to scrub through any song, then dial in tempo, pitch and reverb by hand.</p>
-<a class="btn" href="https://apps.apple.com/app/id6829723858">DOWNLOAD ON THE APP STORE</a>
-<div class="card">
-<div><b>Spin to scrub</b>Turn slowly to scratch like a record, or flick to jump ahead. Haptic clicks with every turn.</div>
-<div><b>One wheel, every dial</b>Tempo from 0.5× to 1.5× without changing key, pitch a full octave up or down, and reverb from dry to wide.</div>
-<div><b>Every tape remembers</b>Each song keeps its own settings. Make your slowed and reverb version once.</div>
-<div><b>Your songs, your device</b>Import MP3, WAV, FLAC or M4A from your phone's files, plus AIFF on iPhone and OGG on Android. No account, no streaming, no tracking.</div>
-<div><b>Free to try</b>Three songs free. Unlock every song with one purchase. No subscription.</div>
-</div>
-<a class="btn" href="/reverie/support">SUPPORT</a>
-<footer><a href="/reverie/">Reverie</a><a href="/reverie/support">Support</a><a href="/reverie/privacy">Privacy</a><span>© 2026 MHD Labs</span></footer></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reverie</title>
+<meta name="description" content="Reverie, music you can feel. Make slowed and reverb, sped-up and pitch-shifted versions of your songs by hand, on iPhone and Android.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap">
+<link rel="stylesheet" href="/style.css">
+<script src="/site.js" defer></script>
+</head>
+<body>
+
+<header class="wrap top">
+  <div class="crumbs"><a class="up" href="/">MHD Labs</a><span class="sep">/</span><a href="/reverie/">Reverie</a></div>
+  <nav class="nav">
+    <a href="#how">How it works</a>
+    <a href="#get">Get it</a>
+    <a class="hide-sm" href="/reverie/support">Support</a>
+    <a class="hide-sm" href="/reverie/privacy">Privacy</a>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <p class="label fade">Music player · iPhone and Android</p>
+    <h1 class="display">
+      <span class="line"><span>Music you</span></span>
+      <span class="line"><span>can feel.</span></span>
+    </h1>
+    <p class="lede fade">Make slowed and reverb, sped-up and pitch-shifted versions of your songs by hand, on a deck that feels like real hardware.</p>
+  </section>
+
+  <section class="wrap instrument fade" data-deck data-track="/reverie/audio/dopamine-by-kv.mp3" data-duration="101">
+    <div class="deck">
+      <canvas class="tape" aria-hidden="true"></canvas>
+      <canvas class="wheel" data-draw="deck" tabindex="0" role="slider" aria-label="Wheel. Turn to scrub, or to set the selected dial. Space plays or pauses." aria-valuetext="Paused"></canvas>
+      <div class="keys" role="group" aria-label="Deck controls">
+        <button type="button" class="key play" data-play aria-pressed="false" aria-label="Play">
+          <span class="k" aria-hidden="true">
+            <svg class="i-play" viewBox="0 0 24 24" width="26" height="26"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor"/></svg>
+            <svg class="i-pause" viewBox="0 0 24 24" width="26" height="26"><path d="M6.5 4.5h4v15h-4zM13.5 4.5h4v15h-4z" fill="currentColor"/></svg>
+          </span>
+          <span class="mono">Play</span><output class="mono">Sound on</output>
+        </button>
+        <button type="button" class="key" data-mode="tempo" aria-pressed="false"><span class="k">T</span><span class="mono">Tempo</span><output class="mono"></output></button>
+        <button type="button" class="key" data-mode="pitch" aria-pressed="false"><span class="k">P</span><span class="mono">Pitch</span><output class="mono"></output></button>
+        <button type="button" class="key" data-mode="reverb" aria-pressed="false"><span class="k">R</span><span class="mono">Reverb</span><output class="mono"></output></button>
+      </div>
+    </div>
+    <p class="hint mono"><span>Press play, then spin the wheel to scratch. Flick it and let it coast.</span><span>Tap T, P or R to turn the wheel into that dial. Double-tap a key to reset it.</span></p>
+    <p class="hint mono">Music: <a href="https://youtube.com/c/KVmusicprod" style="color: var(--ink)">Dopamine by KV ↗</a></p>
+  </section>
+
+  <section class="section">
+    <div class="wrap label label-row" style="margin-bottom: 36px"><span>Inside the app</span><span>(06)</span></div>
+    <div class="reel">
+      <ul class="strip">
+        <li><figure class="shot"><img src="/reverie/screens/deck-silver.jpg" alt="Reverie deck in the Silver finish, playing Slow Afternoon" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>01</span><span>The deck, in Silver</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/reverie/screens/deck-vapor-p.jpg" alt="The wheel turned into the pitch dial, in the lilac Vapor finish" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>02</span><span>Pitch dial, in Vapor</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/reverie/screens/library-graphite.jpg" alt="Library of songs, each tagged with its saved tempo, pitch and reverb" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>03</span><span>Your library</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/reverie/screens/deck-cherry-p.jpg" alt="Reverie deck in the lacquer-red Cherry finish" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>04</span><span>Cherry finish</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/reverie/screens/settings-feel-sakura.jpg" alt="Settings for wheel mode, haptic strength, inertia and click sounds" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>05</span><span>Feel and sound</span></figcaption></figure></li>
+        <li><figure class="shot"><img src="/reverie/screens/deck-phosphor.jpg" alt="Reverie deck in the green Phosphor finish" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>06</span><span>Phosphor finish</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/reverie/screens/deck-silver.jpg" alt="" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>01</span><span>The deck, in Silver</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/reverie/screens/deck-vapor-p.jpg" alt="" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>02</span><span>Pitch dial, in Vapor</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/reverie/screens/library-graphite.jpg" alt="" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>03</span><span>Your library</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/reverie/screens/deck-cherry-p.jpg" alt="" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>04</span><span>Cherry finish</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/reverie/screens/settings-feel-sakura.jpg" alt="" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>05</span><span>Feel and sound</span></figcaption></figure></li>
+        <li aria-hidden="true"><figure class="shot"><img src="/reverie/screens/deck-phosphor.jpg" alt="" width="660" height="1434" loading="lazy"><figcaption class="mono"><span>06</span><span>Phosphor finish</span></figcaption></figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how" class="wrap" style="padding-top: 100px">
+    <div class="label label-row"><span>How it works</span><span>(05)</span></div>
+    <div>
+      <div class="feat">
+        <span class="num mono">01</span>
+        <h3>Spin to scrub</h3>
+        <p>A brushed-metal wheel instead of a progress bar. Turn it slowly to scratch like a record, or flick it and let it spin on. Haptic clicks with every turn.</p>
+      </div>
+      <div class="feat">
+        <span class="num mono">02</span>
+        <h3>One wheel, every dial</h3>
+        <p>Tap T, P or R and the wheel becomes a dial. Tempo from half speed to 1.5× without changing key, pitch a full octave either way, reverb from dry to a wide wash.</p>
+      </div>
+      <div class="feat">
+        <span class="num mono">03</span>
+        <h3>Every tape remembers</h3>
+        <p>Each song keeps its own tempo, pitch and reverb. Make your slowed version once and it plays that way every time.</p>
+      </div>
+      <div class="feat">
+        <span class="num mono">04</span>
+        <h3>All your music, one deck</h3>
+        <p>Import MP3, WAV, FLAC or M4A files, plus AIFF on iPhone and OGG on Android. On iPhone, your synced music library, Apple Music and your Navidrome server play on the deck too. No account and no tracking.</p>
+      </div>
+      <div class="feat">
+        <span class="num mono">05</span>
+        <h3>Beyond the app</h3>
+        <p>On iPhone: Home Screen widgets, a Live Activity, Lock Screen and AirPods controls, and a layout made for iPhone Duo, folded or open.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="get" class="wrap statement">
+    <span class="label">Get it</span>
+    <div class="body">
+      <p class="big">Three songs are free. <span class="soft">Reverie Full unlocks every song and every finish for $9.99, once. No subscription.</span></p>
+      <div class="go-list">
+        <a class="go" href="https://apps.apple.com/app/id6829723858"><span>App Store</span><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="go" href="https://play.google.com/store/apps/details?id=com.mhd3v.reverie"><span>Google Play</span><span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <div class="foot-bar mono">
+    <span>Made by <a href="/" style="color: var(--ink)">MHD Labs</a></span>
+    <div class="links">
+      <a href="/reverie/support">Support</a>
+      <a href="/reverie/privacy">Privacy</a>
+      <a href="/reverie/samples/">Test sounds</a>
+      <a href="/ritlum/">Ritlum →</a>
+    </div>
+  </div>
+  <div class="wordmark app" aria-hidden="true">Reverie</div>
+</footer>
+
+</body>
+</html>
